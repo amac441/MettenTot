@@ -1,3 +1,2 @@
-from django.shortcuts import render
+#App Folders
 
-# Create your views here.

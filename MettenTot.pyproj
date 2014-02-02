@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51dc0eee-6f31-44c3-a9f2-9c15977e58fb}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="MettenTot\templates\index.html" />
+    <Compile Include="MettenTot\manage.py" />
+    <Compile Include="MettenTot\MettenTot\settings.py" />
+    <Compile Include="MettenTot\MettenTot\urls.py" />
+    <Compile Include="MettenTot\MettenTot\wsgi.py" />
+    <Compile Include="MettenTot\MettenTot\__init__.py" />
+    <Compile Include="MettenTot\myapp\admin.py" />
+    <Compile Include="MettenTot\myapp\models.py" />
+    <Compile Include="MettenTot\myapp\tests.py" />
+    <Compile Include="MettenTot\myapp\views.py" />
+    <Compile Include="MettenTot\myapp\__init__.py" />
+    <Compile Include="MettenTot\myapp\migrations\0001_initial.py" />
+    <Compile Include="MettenTot\myapp\migrations\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MettenTot" />
+    <Folder Include="MettenTot\MettenTot" />
+    <Folder Include="MettenTot\myapp" />
+    <Folder Include="MettenTot\myapp\migrations" />
+    <Folder Include="MettenTot\templates\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

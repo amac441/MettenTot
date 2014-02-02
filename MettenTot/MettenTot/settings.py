@@ -105,7 +105,7 @@ ROOT_URLCONF = 'MettenTot.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'MettenTot.wsgi.application'
 
-TEMPLATE_DIRS = (
+TEMPLATE_DIRS = ('C:/Users/Andrew/Documents/Visual Studio 2013/Projects/MettenTot/MettenTot/templates'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -119,8 +119,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'myapp',
-    'south',
+    'taggit',
+    #'myapp',
+    'blog',
+    #'south',
+    'markdown_deux',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )

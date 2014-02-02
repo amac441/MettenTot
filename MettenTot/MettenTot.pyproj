@@ -33,6 +33,11 @@
     <Compile Include="MettenTot\settings.py" />
     <Compile Include="MettenTot\urls.py" />
     <Compile Include="MettenTot\wsgi.py" />
+    <Compile Include="myapp\admin.py" />
+    <Compile Include="myapp\models.py" />
+    <Compile Include="myapp\tests.py" />
+    <Compile Include="myapp\views.py" />
+    <Compile Include="myapp\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <WebPiReference Include="https://www.microsoft.com/web/webpi/3.0/toolsproductlist.xml%3fDjango">
@@ -45,6 +50,11 @@
       <ProductId>Python27</ProductId>
       <FriendlyName>Python 2.7</FriendlyName>
     </WebPiReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MettenTot\" />
+    <Folder Include="MettenTot\templates\" />
+    <Folder Include="myapp\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <ProjectExtensions>
