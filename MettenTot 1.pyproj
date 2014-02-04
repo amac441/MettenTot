@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49c5d4f3-6ac8-44cf-a068-225dbba74bf8}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="MettenTot\static\css\main.css" />
+    <Content Include="MettenTot\static\css\normalize.css" />
+    <Content Include="MettenTot\static\img\django-powered.png" />
+    <Content Include="MettenTot\static\img\html5.png" />
+    <Content Include="MettenTot\static\img\logo.png" />
+    <Content Include="MettenTot\static\img\tag_icon.png" />
+    <Content Include="requirements.txt" />
+    <Content Include="MettenTot\requirements.txt" />
+    <Compile Include="MettenTot\manage.py" />
+    <Compile Include="MettenTot\blog\admin.py" />
+    <Compile Include="MettenTot\blog\models.py" />
+    <Compile Include="MettenTot\blog\tests.py" />
+    <Compile Include="MettenTot\blog\urls.py" />
+    <Compile Include="MettenTot\blog\views.py" />
+    <Compile Include="MettenTot\blog\__init__.py" />
+    <Compile Include="MettenTot\MettenTot\settings.py" />
+    <Compile Include="MettenTot\MettenTot\urls.py" />
+    <Compile Include="MettenTot\MettenTot\wsgi.py" />
+    <Compile Include="MettenTot\MettenTot\__init__.py" />
+    <Compile Include="MettenTot\myapp\admin.py" />
+    <Compile Include="MettenTot\myapp\models.py" />
+    <Compile Include="MettenTot\myapp\tests.py" />
+    <Compile Include="MettenTot\myapp\views.py" />
+    <Compile Include="MettenTot\myapp\__init__.py" />
+    <Content Include="MettenTot\templates\archives.html" />
+    <Content Include="MettenTot\templates\blog.html" />
+    <Content Include="MettenTot\templates\index.html" />
+    <Content Include="MettenTot\templates\post.html" />
+    <Content Include="MettenTot\templates\tagpage.html" />
+    <Compile Include="MettenTot\blog\migrations\0001_initial.py" />
+    <Compile Include="MettenTot\blog\migrations\__init__.py" />
+    <Compile Include="MettenTot\myapp\migrations\0001_initial.py" />
+    <Compile Include="MettenTot\myapp\migrations\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MettenTot" />
+    <Folder Include="MettenTot\blog" />
+    <Folder Include="MettenTot\blog\migrations" />
+    <Folder Include="MettenTot\MettenTot" />
+    <Folder Include="MettenTot\myapp" />
+    <Folder Include="MettenTot\myapp\migrations" />
+    <Folder Include="MettenTot\static\" />
+    <Folder Include="MettenTot\static\css\" />
+    <Folder Include="MettenTot\static\img\" />
+    <Folder Include="MettenTot\templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
